@@ -126,12 +126,10 @@
 	};
 
 	sound {
-/*		compatible = "karo,imx6qdl-tx6qdl-sgtl5000","fsl,imx-audio-sgtl5000";*/
 		compatible = "fsl,imx-audio-sgtl5000";
 		model = "sgtl5000-audio";
 		pinctrl-names = "default";
-		/*		pinctrl-0 = <&pinctrl_audmux>; */
-		pinctrl-0 = <TX_SSI1>;
+		pinctrl-0 = <&pinctrl_ssi1>;
 		ssi-controller = <&ssi1>;
 		audio-codec = <&sgtl5000>;
 		audio-routing =
@@ -140,6 +138,7 @@
 			"Headphone Jack", "HP_OUT";
 		mux-int-port = <1>;
 		mux-ext-port = <5>;
+		status = "okay";
 	};
 };
 
