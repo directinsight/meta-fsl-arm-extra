@@ -17,6 +17,7 @@ SRC_URI = "${KERNEL_SRC};branch=${SRCBRANCH} \
 SRC_URI += "file://imx6dl-tx6s-8134.dts;subdir=git/arch/arm/boot/dts \
 	    file://imx6dl-tx6s-8135.dts;subdir=git/arch/arm/boot/dts \
 	    file://imx6dl-tx6u-8133.dts;subdir=git/arch/arm/boot/dts \
+	    file://imx6dl-tx6s-8034-phoenix.dts;subdir=git/arch/arm/boot/dts \
 	   "
 
 KERNEL_IMAGETYPE="uImage"
