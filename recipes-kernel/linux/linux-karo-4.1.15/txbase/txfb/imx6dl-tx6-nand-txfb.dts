@@ -114,25 +114,23 @@ TX_LCD_FB {
 &iomuxc {
     /* pinctrl-names = "default"; /* This is not needed? */
     /* inctrl-0 = <&pinctrl_hog>; /* Already in dtsi     */
-	tx6 {
-		pinctrl_hog: hoggrp {
-			fsl,pins = <
-				TX_GPIO_PAD154 /* These macros are defined in    */
-				TX_GPIO_PAD155 /* the file imx6*-tx6-gpio.h      */
- 				TX_GPIO_PAD156 /* in the dts include directory   */
-				TX_GPIO_PAD157
-				TX_GPIO_PAD158
-				TX_GPIO_PAD159
-				TX_GPIO_PAD115
-				TX_GPIO_PAD114
-				TX_GPIO_PAD113
-				TX_GPIO_PAD112
-				TX_GPIO_PAD110
-				TX_GPIO_PAD109
-				TX_GPIO_PAD108
-				TX_GPIO_PAD107
-				TX_GPIO_PAD106
-			>;
-		};
+	pinctrl_hog: hoggrp {
+		fsl,pins = <
+			TX_GPIO_PAD154 /* These macros are defined in    */
+			TX_GPIO_PAD155 /* the file imx6*-tx6-gpio.h      */
+ 			TX_GPIO_PAD156 /* in the dts include directory   */
+			TX_GPIO_PAD157
+			TX_GPIO_PAD158
+			TX_GPIO_PAD159
+			TX_GPIO_PAD115
+			TX_GPIO_PAD114
+			TX_GPIO_PAD113
+			TX_GPIO_PAD112
+			TX_GPIO_PAD110
+			TX_GPIO_PAD109
+			TX_GPIO_PAD108
+			TX_GPIO_PAD107
+			TX_GPIO_PAD106
+		>;
 	};
 };
